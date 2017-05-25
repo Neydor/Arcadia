@@ -22,14 +22,11 @@ public class HabitacionLogica {
         return habitacionDAO.findHabitacionEntities();
     }
 
-    public void registrarHabitacion(String id,Tipohabitacion t) throws Exception {
-        Habitacion h = new Habitacion();
-        h.setIdhabitacion(id);
-        h.setNombretipohabitacion(t);
+    public void registrarHabitacion(Habitacion h) throws Exception {
         habitacionDAO.create(h);
     }
     
-    public Habitacion consultarHabitacion(String id) throws Exception{
-        return habitacionDAO.findHabitacion(id);
+    public Habitacion consultarHabitacion(Habitacion h) throws Exception{
+        return habitacionDAO.findHabitacion(h.getIdhabitacion());
     }
 }

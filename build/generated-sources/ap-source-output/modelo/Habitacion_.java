@@ -9,7 +9,7 @@ import modelo.Hospedaje;
 import modelo.Reservahabitacion;
 import modelo.Tipohabitacion;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-05-24T21:15:19")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-05-24T23:45:12")
 @StaticMetamodel(Habitacion.class)
 public class Habitacion_ { 
 
