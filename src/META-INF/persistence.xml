@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ArcadiaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.Salondeeventos</class>
+    <class>modelo.Consumo</class>
+    <class>modelo.Productocafeteria</class>
+    <class>modelo.Usuario</class>
+    <class>modelo.Hospedaje</class>
+    <class>modelo.Cliente</class>
+    <class>modelo.Comodidadasociada</class>
+    <class>modelo.Reservahabitacion</class>
+    <class>modelo.Tipohabitacion</class>
+    <class>modelo.Reservasalon</class>
+    <class>modelo.Habitacion</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Arcadia"/>
+      <property name="javax.persistence.jdbc.user" value="userHotel"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="userHotel"/>
+    </properties>
+  </persistence-unit>
+</persistence>
